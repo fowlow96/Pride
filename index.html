@@ -1,0 +1,444 @@
+<html>
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|East+Sea+Dokdo" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('textbox').innerHTML=document.getElementById(id).innerHTML}</script>
+<style type="text/css">
+
+.tabs {
+width: 100%;
+height: 100%;
+display: block; 
+}
+
+h1 {
+font-family: 'Cinzel', serif;
+font-size: 300%;
+text-align: center;  
+text-shadow: 2px 2px 5px #237846;
+color: #000000;
+}
+
+h2 {
+font-family: 'Cinzel', serif;
+font-size: 200%;
+text-align: center;  
+text-shadow: 2px 2px 5px #237846;
+color: #000000;
+}
+
+#container {
+position: absolute; 
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%; 
+background: url("https://i.imgur.com/bBWMXcK.png");
+background-size: 100% 100%;
+}
+
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #ffffff;}
+
+#box1 {
+position: fixed;
+top: 2%;
+left: 2%;
+height: 60%;
+width: 45%; 
+border: 2px solid #ffffff;
+}
+
+#textbox {
+position: fixed;
+top: 3%;
+left: 3%;
+height: 58%;
+width: 43%;
+font-family: 'Cormorant Garamond', serif;
+font-size: 70%;  
+color: #ffffff;
+overflow: auto; 
+}
+
+#coat {
+position: fixed;
+top: 2%;
+left: 2%;
+height: 60.5%;
+width: 45.3%; 
+background: url("https://i.imgur.com/Tj4bZb1.gif");
+background-size: 100% 100%;
+opacity: 0.05;
+}
+
+#coat2 {
+position: fixed;
+top: 2%;
+left: 2%;
+height: 60.5%;
+width: 45.3%; 
+background: #000000;
+background-size: 100% 100%;
+}
+
+#tab1 {
+position:fixed;
+top: 63%;
+left: 2%; 
+height: 12%; 
+width: 6%; 
+background: url("http://i.imgur.com/Uxy2KeV.gif");
+background-size: 100% 100%; 
+}
+
+#tab1:hover~#name1 {
+opacity: 1; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab2:hover~#name2 {
+opacity: 1; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab3:hover~#name3 {
+opacity: 1; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#name1 {
+position:fixed;
+top: 75%;
+left: 2%; 
+height: 4%; 
+width: 6%; 
+text-shadow: 2px 2px 5px #237846;
+color: #000000;
+font-family: 'East Sea Dokdo', cursive;
+text-align: center;
+font-size: 130%;
+opacity: 0.0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab2 {
+position:fixed;
+top: 63%;
+left: 21.5%; 
+height: 12%; 
+width: 6%; 
+background: url("https://i.imgur.com/Uxy2KeV.gif");
+background-size: 100% 100%; 
+}
+
+#name2 {
+position:fixed;
+top: 75%;
+left: 21.5%; 
+height: 4%; 
+width: 6%; 
+text-shadow: 2px 2px 5px #237846;
+color: #000000;
+font-family: 'East Sea Dokdo', cursive;
+text-align: center;
+font-size: 130%;
+opacity: 0.0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab3 {
+position:fixed;
+top: 63%;
+left: 41%; 
+height: 12%; 
+width: 6%; 
+background: url("https://i.imgur.com/Uxy2KeV.gif");
+background-size: 100% 100%; 
+}
+
+#name3 {
+position:fixed;
+top: 75%;
+left: 41%; 
+height: 4%; 
+width: 6%; 
+text-shadow: 2px 2px 5px #237846;
+color: #000000;
+font-family: 'East Sea Dokdo', cursive;
+text-align: center;
+font-size: 130%;
+opacity: 0.0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#flag {
+position: fixed; 
+top: 0%;
+left: 80%;
+width: 20%;
+height: 100%;
+background: url("https://i.imgur.com/Q62MM95.png"); 
+background-size: 100% 100%; 
+}
+
+#orb1 {
+position: fixed; 
+top: 1%; 
+left: 87%;
+width: 6%; 
+height: 12%;
+background: url("https://i.imgur.com/Shno7Lq.jpg");
+background-size: 100% 100%; 
+border-radius: 100%;
+border: 2px solid #000000;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#orb1:hover {
+position: fixed; 
+top: 1%; 
+width: 10%; 
+left: 85%;
+height: 33%;
+border-radius: 0%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+border: 0px;
+}
+
+#orb2 {
+position: fixed; 
+top: 34.3%; 
+left: 87%;
+width: 6%; 
+height: 12%;
+background: url("https://i.imgur.com/R6AHgNY.jpg");
+background-size: 100% 100%;
+border: 2px solid #000000;
+border-radius: 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+
+}
+
+#orb2:hover {
+position: fixed; 
+top: 34.3%; 
+width: 10%; 
+left: 85%;
+height: 33%;
+border-radius: 0%; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+border: 0px;
+}
+
+#orb3 {
+position: fixed; 
+top: 67.6%; 
+left: 87%;
+width: 6%; 
+height: 12%;
+background: url("https://i.imgur.com/hXeSZ2f.jpg");
+background-size: 100% 100%;
+border-radius: 100%;
+border: 2px solid #000000;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#orb3:hover {
+position: fixed; 
+top: 67.6%; 
+width: 10%; 
+left: 85%;
+height: 34.3%;
+border-radius: 0%; 
+border: 0px; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bottombanner {
+position:fixed;
+top: 95%;
+height: 5%;
+left: 0%;
+width: 80%; 
+background: url("https://i.imgur.com/3faWuij.png");
+background-size: 100% 100%;
+}
+
+#ira {
+position: fixed;
+top: 95%; 
+height: 5%;
+left: 4.1%; 
+width: 2.8%;
+opacity: 0; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#ira:hover {
+opacity: 1;
+background: url("https://i.imgur.com/qKofLS1.png");
+background-size: 100% 100%;
+}
+
+#pereza {
+position: fixed;
+top: 95%; 
+height: 5%;
+left: 15.9%; 
+width: 2.85%;
+opacity: 0; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pereza:hover {
+background: url("https://i.imgur.com/6Bw5z9y.png"); 
+background-size: 100% 100%; 
+opacity: 1; 
+}
+
+#avaricia {
+position: fixed;
+top: 95%; 
+height: 5%;
+left: 26.9%; 
+width: 3.8%;
+opacity: 0; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#avaricia:hover {
+background: url("https://i.imgur.com/7AeCYAE.png");
+background-size: 100% 100%; 
+opacity: 1; 
+}
+
+#soberbia {
+position: fixed;
+top: 95%; 
+height: 5%;
+left: 37.9%; 
+width: 3.8%;
+opacity: 0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#soberbia:hover {
+background: url("https://i.imgur.com/W36pRm9.png"); 
+background-size: 100% 100%; 
+opacity: 1; 
+}
+
+#gula {
+position: fixed;
+top: 95%; 
+height: 5%;
+left: 49.9%; 
+width: 2.4%;
+opacity: 0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#gula:hover {
+background: url("https://i.imgur.com/ugd4tHu.png"); 
+background-size: 100% 100%; 
+opacity: 1; 
+}
+
+
+#Lujuria {
+position: fixed;
+top: 95%; 
+height: 5%;
+left: 61%; 
+width: 3.3%;
+opacity: 0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Lujuria:hover {
+background: url("https://i.imgur.com/r2CrP0Y.png"); 
+background-size: 100% 100%; 
+opacity: 1; 
+}
+
+#Envidia {
+position: fixed;
+top: 95%; 
+height: 5%;
+left: 72.55%; 
+width: 3.5%;
+opacity: 0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Envidia:hover {
+background: url("https://i.imgur.com/qOkH2dI.png"); 
+background-size: 100% 100%; 
+opacity: 1; 
+}
+
+#info,#history,#abilities {
+display: none; 
+}
+</style>
+<div id="container"><div id="coat2"></div><div id="coat"></div><div id="box1"></div><div id="flag"></div><div id="orb1"></div><div id="orb2"></div><div id="orb3"></div>
+<div id="tab1"><span class="tabs" onClick="changeNavigation ('info')"></span></div>
+<div id="tab2"><span class="tabs" onClick="changeNavigation ('history')"></span></div>
+<div id="tab3"><span class="tabs" onClick="changeNavigation ('abilities')"></span></div>
+<div id="name1">Information</div>
+<div id="name2">History</div>
+<div id="name3">Abilities</div>
+<div id="bottombanner"></div>
+<div id="ira"></div>
+<div id="pereza"></div>
+<div id="avaricia"></div>
+<div id="soberbia"></div>
+<div id="gula"></div> 
+<a target="_blank" href="http://covet.chatango.com"><div id="Lujuria"></div></a>
+<div id="Envidia"></div>
+<div id="textbox"><h1>Fastus Imperium</h1><h2>Pride</h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>To view character information, click on the icons below. The circular pictures on the right hand side of the profile can be hovered for better clarity, and the titles on the bottom of the page may be clicked to acess information on the other Deadly Sins.<br><br>Music Credit: "Lorian, Elder Prince & Lothric, Younger Prince" Composed By Yuka Kitamura For The Dark Souls III OST.</div>
+<div id="info"><h1>Character Information</h1><h2>Appearance</h2>Fastus Imperium is a Darkborn, a race of demonic hellspawn which reside in a realm coated in a hostile magick known as Umbra. This energy has shifted the Darkborn into beings of absolute and pure shadow, allowing them to manipulate the dark arts in many treacherous ways. Although typically only used as a method to stalk and track targets, the Darkborn are gifted with the ability to create and maintain physical human forms, allowing them to blend into society and avoid detecti. Upon receiving the mark of Pride, Fastus denounced the ways of his race, disgusted at the idea of being nothing more than a shadow. Through practical applications of his shapeshifting technique, as well as excess energy created via his new Sin marking, Pride created a legitimate humanoid form which he now constantly resides in. It is rumored to have taken him nearly a decade to prefect, having to physically train his body to it's peak condition only to find it structurally unsuitable, and destroy it entirely to start anew. Once he’d created the perfect physical form in which to do battle, he sculpted his features to be as defined and recognizable as possible. This includes a strong jaw and chiseled chin, as well as a striking physique which accompanies his barbaric attire. A massive facial tattoo rips through the lines of his face, making him as distinct as possible as it trails down the rest of his body. Although his nature will never allow him to show it, Pride cares greatly about his appearance, feeling as though his outward display affects how he is treated by the world.<h2><img src="https://i.imgur.com/xrlEFYD.png" style="height: 50%; width: 50%;"><h2>The Mentality Of Pride</h2>As is expected from the being of Pride, Fastus bases all of his decisions on public perception, as well as his image toward others. Although he may behave in barbaric manners, his actions are heavily considered and calculated. Despite his ability to rationalize, the fear of appearing inferior in comparison to others powers his extreme motivation and base impulses. In most cases, this allows him to accomplish superhuman feats of a physical and mentally dedicated nature, but it can also easily get him into situations which are above his own head. Although he would never admit to a losing battle, the rage of his Pride Mark typically provides him with enough energy to power through an uphill battle, or at the very least tap into his subconscious Darkborn ways to cheat his way to victory. As it stands, his failure against Gheeodi and Gulam marks his first true defeat, which has (in combination with his torture) extremely distorted Fastus’ mind. He is heavily distrustful to others, typically assuming that all beings will inevitably turn on one another in an attempt to feign superiority. In his mind, cooperation is a pathetic tactic; his loss against Gheeodi and Gulam’s army has caused him to believe standing with a group simply allows one to pretend to have power they do not. Because of this, he finds it extremely hard to befriend or ally with other beings, although he is bound to require them regardless. Despite his distrust and hatred, Pride cannot find himself in isolation, as he requires an audience to his legacy. This will always cause Fastus to seek out comradeship, and eventually develop bonds in which his Pride can literally leak over into others. He wishes to keep company nearly as powerful as himself, and will often help or train others in order to keep them up to snuff.<h2><img src="https://i.imgur.com/IwUCXxD.jpg" style="height: 60%; width: 30%;"><h2></div> 
+<div id="history"><h1>Pride's Fall</h1>Fastus Imperium spent the early days of his rule locked away within a castle. To be king -- he thought -- is to be strength itself, and he dared not appear before his subjects until he was certain he’d be the strongest of them all. Months passed in agonizing training, pushing his body to its absolute limit to become physically, mentally and visually strong. He scoured his every atom for signs of weakness or deformity, cleansing and punishing himself until he was certain that he’d achieved absolute perfection (at least in his own eyes). With his task completed, he stepped out from his home -- a fortress built into the highest mountain of the land -- to look down on his subjects, assuming that they’d undergone similar transformations. Much to his dismay, the world had continued as normal, with small towns and villages banding together to create their own system of law, and protect those who were too weak to do so for themselves. This made him sick, and put him into a fit of blind rage; Fastus was nothing but the sum of his people, and if his people were weak, then so was he. He dropped from his mountain, finding every lawbringer, protector, and general defender of the masses, only to kill them all in single combat. Once none remained, he gathered his citizens and instilled the “Law Of The Victor”, overriding ALL previous forms of government regulation to boil down to a single rule: He who wins is right, no matter the cause. This -- as expected -- turned his kingdom into an absolute wasteland, allowing horrible monsters and even worse men to roam the world freely, causing havoc as they saw fit.<br><br>Although his land was in shambles, Fastus knew it was for the better; millions died in the coming years, and the great King spent them back inside his castle, growing even more powerful while his people perished. When he again returned to check on his citizens, he saw the kingdom that he truly wanted; a world of hardened criminals and mighty warriors, and a desperate valley of death in which only the strong survived. These new warriors all pledged their allegiance to Fastus and his way of life, split into tribes of warring factions which eternally battled for the whims of their King. Pleased at the progress of his home, the mighty leader erected a massive flag at the highest tower in his castle, instructing all the factions to send their mightiest warrior to the summit, as a tournament to decide the true rulers of the world was to be held, and the victor’s faction would become his personal guard. Due to the horribly dangerous nature of the world itself, not to mention the hazardous mountain in which his castle stood, many of these champions never finished their journey; Fatsus waited a week for his combatants, and any who had failed to finish climbing the mountain by that time were killed, as he expected them to be too weak to even put up a fight. <br><br>With the champions selected, Fastus dictated the rules of their combat, attempting to make the fights as fair and skill based as he possibly could. Originally, these battles were not meant to be to the death, but upon witnessing the victor of the first match, the King became infuriated at the losers weakness, and quickly changed his mind; this victor was Gulam Reiche, and he struck down his opponent with a mighty blow, much to the other competitors dismay. This was the first seed of tension which planted within his people, and it would only grow stronger from there. At the end of the tournament, only Gulam Reiche remained alive, crowned as Fastus’ champion and the second strongest man alive. His faction was permitted to climb the mountain, becoming the King’s Guard and ruling over all the other groups with an iron fist. Still disgusted by the losers and their weakness, he banishes the remaining factions to the farthest reaches of the kingdom.<br><br>Many years passed, and with none left to conquer, Faustus became increasingly bored and belligerent to his new people. He’d send his kingsguard to attack various factions in seemingly suicidal situations, claiming that if they were to die, they deserved it regardless. Those who could keep up with his demands were praised and lived comfortably, but those who failed him were punished harshly, and likely sent to their deaths. Although Gulam remained as Fastus’ right hand, he became worried for his people, who were dwindling away to nothing; Gulam had goals of his own, and could not see to them with the small numbers in which his master had reduced them to. Despite this, the two became close, with Fastus teaching Gulam more about the art of combat in an attempt to pass on his legacy; Fastus soon found that the indomindable pride that he saw in himself had extended to his student, and truly saw the man as his son. Little did Fastus know, Gulam continued to doubt his King’s methods, but instead of attempting to overthrow him, he proposed what he thought to be a better idea. He begged his King to unite all the banished factions into an army so they could march into the other Kingdoms, uniting them all under a single rule so that all the world could become as strong as they had. Unsurprisingly, Fastus refused, claiming he would never work with the weaklings that he once banished, and would speak no more of it to his protege. Gulam -- already annoyed at his King’s arrogance -- defied him, stating that he was simply too afraid to lose against the other Kingdoms, which caused the two to begin a bloody battle which eventually ended in Gulam’s defeat.<br><br>Although Gulam was certain he’d perish, Fastus showed a first act of mercy on his old protege; this was not because he cared for Gulam, but rather he thought to watch a student of his die so dishonorably would reflect poorly upon himself. Once again, Fastus and his pride made a fatal mistake. Gulam collected himself, convincing his entire faction to betray Fastus and escape the castle in the middle of the night; the King of Pride awoke to find himself alone. It was during these harsh days of exile which Gulam and his people met Geeohdi, and together conspired to unite the kingdoms as he’d originally planned; they traveled to the other factions, convincing them to take up their arms and forming a massive army which stormed the mountain of Pride. With no allies to help him, Pride did his best against the oncoming assault, but eventually fell to the combined powers of his old student and his new ally. As punishment for his transgressions, his body was buried in a tomb at the bottom of his illustrious mountain, and a spell was cast on his mind; for eternity he would hallucinate the final moments of his defeat, falling from his mountain as his old subjects cheered and ridiculed him until the end of time.</div>
+<div id="abilities"><h1>Powers & Abilities</h1><u> Indomitable:</u> Fastus has trained his mind and body to become strong, but his true strength comes from the anger which dwells within his demonic core. Having been born with the mark of Pride, the grand energies that be will not allow Fastus to fall to another in a situation which comes down to them and them alone. Although this does not make him unbeatable, it does allow him to withstand any singular assault, whether it be mental or physical. Against mere mortals, this typically renders him almost invincible, but there remains a catch when fighting stronger beings, such as the other Sins or Virtues. Although he may not succumb to a singular contest, this does not mean he can best them either. For example: in a test of pure strength or speed, Fastus’ demonic energies will allow him to raise to the level of his competitor, but will not technically allow him to surpass them. Being attacked via the mind will prove effective enough to distract or weaken him, but will never succeed in fully thralling him to the assaulters whim. In situations like this, only true and pure combative skill can kill him.<h1><img src="https://i.imgur.com/DpNouwS.jpg" style="width: 60%; height: 60%;" ></img></h1><br><br><u>Shadow Demon:</u> Fastus comes from a clan of powerful demons known as the Darkborn, and as such still retains most of their physiology and abilities. Although he has no control over natural darkness and shadow, he is able to manipulate a mysterious and ethereal energy known as Umbra. Umbra exists as a thick and almost smoke-like chemical which can excrete from Fastus’ pores and transform into two distinct varieties of physical presence. The first is a hard and metal-like material in which he can use as weaponry and projectiles, and the other is a sickly black tar-like substance which is used to slow and hamper movement. In addition, he may also cast this shadow around himself and a target area, allowing him to submerge himself in darkness. Much like blood, or stamina in general, Fastus can only use so much of this Umbra before his capacity runs low, greatly weakening him and even pushing him to the point of exhaustion if he is not careful. If he allows his Umbra to reach below a quarter of his “full tank”, all other abilities (Indomitable included) cease to work as intended. Rest and the passage of time is the most common way for Fastus to regain his Umbra, but killing a being which has been assaulted with his magic will allow him to regain slight chunks of it over time (this depends entirely on how much of the resource was used on the being prior to its death).<h1><img src="https://i.imgur.com/5TiT5Dq.jpg" style="width: 60%; height: 60%;" ></img></h1><br><br><u>Pride’s Fall:</u> A technique he mastered during his days atop the great mountain, Fastus is able to coat himself in extreme concentrations of Umbra, causing it to convert kinetic energy and amass it amongst his own power. Because of the nature of this ability, kinetic energy may only be converted into Umbra if it has not been created by Fastus himself, as recycling his energy would only produce diminishing returns. As such, this technique will only activate if Fastus has traveled a great distance without his own movement, such as falling or being moved by another being. Upon coming in contact with the ground after this process has begun, the entire immediate area will become bathed in hostile Umbra, causing an immense explosion of shadows which obliterates nearly anything mundane in his path. Although this can still seriously damage or injure other Sins and Virtues, it's power is primarily focused on destruction of the mundane; as such, it is typically easily countered by beings of non-mortal descent, or at the very least avoided.<h1><img src="https://i.imgur.com/MhjW57x.jpg" style="width: 60%; height: 60%;" ></img></h1><br><br><u>Duelist’s Gaze:</u> Fastus may concentrate his Umbra into a manifestation of his own pride, pooling it into his eyeballs as they lock on to a set target within visual range. As long as the pair are able to maintain extended eye contact, the afflicted target will begin to feel as much rage and pride as Fastus himself does, typically throwing them off their game or making them irrational. If extended contact remains, Fastus may challenge the target to a duel; the pride in which he instilled within his target will make this offer extremely hard to refuse, but not impossible. Should they both verbally agree to this contract, they will be made ethereal, disappearing from the mortal plane altogether. Their consciousness will be transported to a desolate plain of chaos, in which nothing exists but them and their powers. As hours pass in this realm, only seconds do in the real world; the combatants may duke it out as long as they see physically possible, fighting to the death without actually having to kill one another. The loser will return to their body with most of their stamina and energy drained, while the victor returns at full health and peak physical condition.<h1><img src="https://i.imgur.com/HSUWQmB.jpg" style="width: 60%; height: 60%;" ></img></h1>
+</div>
+
+</div>
+</html>
